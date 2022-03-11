@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_signup {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 80px;
+}
+.signupform {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 70vh;
+}
+.signupform h1 {
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+label,
+input {
+  display: block;
+}
+input {
+  background-color: #ffefd5;
+  border: 1px solid lightgray;
+  height: 20px;
+  width: 300px;
+  margin-top: 5px;
+  border-radius: 5%;
+}
+input:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  margin-bottom: 20px;
+}
+input[type="file"] {
+  opacity: 0;
+}
+.imgfile {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 30%;
+  margin-bottom: -5%;
+}
+button[type="submit"] {
+  background-color: #0275d8;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+  padding: 6px 10px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+button[type="reset"] {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.signupimg {
+  width: 40%;
+  height: 70vh;
+}
+.signupimg img {
+  width: 100%;
+  height: 100%;
 }
