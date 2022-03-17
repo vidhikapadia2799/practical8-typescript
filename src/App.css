@@ -30,18 +30,19 @@ input:focus {
   outline: none;
 }
 
-label {
+/* label {
   margin-bottom: 20px;
-}
-input[type="file"] {
+} */
+/* input[type="file"] {
   opacity: 0;
-}
+} */
 .imgfile {
   cursor: pointer;
   margin-top: 20px;
   margin-left: 30%;
   margin-bottom: -5%;
 }
+
 button[type="submit"] {
   background-color: #0275d8;
   color: #fff;
@@ -67,4 +68,12 @@ button[type="reset"] {
 .signupimg img {
   width: 100%;
   height: 100%;
+}
+
+/* Home page */
+.homepage {
+  display: flex;
+
+  justify-content: space-between;
+  margin: 20px;
 }

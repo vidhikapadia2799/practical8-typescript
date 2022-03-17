@@ -7,3 +7,9 @@ export const registerUser = (user: IUser) => {
     payload: user,
   };
 };
+
+export const logoutUser = () => {
+  return {
+    type: ActionType.USER_LOGOUT,
+  };
+};

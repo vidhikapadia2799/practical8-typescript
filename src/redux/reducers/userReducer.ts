@@ -4,9 +4,11 @@ import { IUser, Action } from "../actions/index";
 const initialState: IUser = {
   name: "",
   email: "",
-  phoneno: 0,
+  phoneno: "",
   password: "",
   confirmpassword: "",
+  image: null,
+  isLoggedIn: false,
 };
 
 const userReducer = (state: IUser = initialState, action: Action) => {
@@ -16,6 +18,8 @@ const userReducer = (state: IUser = initialState, action: Action) => {
         ...state,
         ...action.payload,
       };
+    case ActionType.USER_LOGOUT:
+      return initialState;
     default:
       return state;
   }
